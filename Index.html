@@ -3,81 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <title>civilcodecraft | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
-      background: #f0f0f0;
-    }
-    .card {
-      background: white;
-      max-width: 600px;
-      margin: auto;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      color: #333;
     }
-    img {
-      width: 100px;
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
     }
+
     h1 {
-      margin: 10px 0 5px;
+      margin: 15px 0 5px;
+      font-size: 28px;
     }
-    p {
-      margin: 5px 0;
+
+    p.subtitle {
+      font-size: 16px;
+      color: #666;
     }
-    .section {
-      margin-top: 50px;
+
+    section {
+      margin-bottom: 30px;
     }
-    .skills, .projects {
-      text-align: left;
-      margin: 0 20px;
+
+    h2 {
+      font-size: 22px;
+      color: #444;
+      margin-bottom: 12px;
+      border-left: 4px solid #4a90e2;
+      padding-left: 10px;
     }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
     a.button {
       display: inline-block;
       margin-top: 15px;
       padding: 10px 20px;
-      background: #333;
+      background: #4a90e2;
       color: white;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #357ABD;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="https://via.placeholder.com/100" alt="Profile Photo">
-    <h1>civilcodecraft</h1>
-    <p>Civil Engineering Student | Learning Web Dev</p>
-    <p>Dreaming big. Working bigger.</p>
-    <a href="mailto:example123@gmail.com" class="button">Contact Me</a>
-  </div>
+  <div class="container">
+    <div class="profile">
+      <img src="https://via.placeholder.com/120" alt="Profile Photo">
+      <h1>civilcodecraft</h1>
+      <p class="subtitle">Civil Engineering Student | Aspiring Web Developer</p>
+      <a href="mailto:example123@gmail.com" class="button">Contact Me</a>
+    </div>
 
-  <div class="section about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a Civil Engineering student passionate about web development. I believe in building solutions that help people and make a real-world impact. Right now, I’m learning front-end development to combine my engineering mindset with creativity.</p>
-  </div>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm a Civil Engineering student passionate about web development. I believe in building solutions that help people and make a real-world impact. Currently, I’m learning front-end development to combine my engineering mindset with creativity.</p>
+    </section>
 
-  <div class="section skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML / CSS</li>
-      <li>JavaScript</li>
-      <li>Python (Basics)</li>
-      <li>Git / GitHub</li>
-      <li>Responsive Design</li>
-    </ul>
-  </div>
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>Python (Basics)</li>
+        <li>Git / GitHub</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
 
-  <div class="section projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Portfolio Website</li>
-      <li>Simple Web App (To-Do List)</li>
-      <li>Personal Blog (Coming Soon)</li>
-    </ul>
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Portfolio Website</li>
+        <li>Simple Web App (To-Do List)</li>
+        <li>Personal Blog (Coming Soon)</li>
+      </ul>
+    </section>
   </div>
 </body>
 </html>
+ 
